@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Image Gallery</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content">
+                <img onclick="openImg(this)" src="./images/img.jpg" alt="naruto" />
+            </div>
+            <div class="content">
+                <img onclick="openImg(this)" src="./images/img1.jpg" alt="naruto" />
+            </div>
+            <div class="content">
+                <img onclick="openImg(this)" src="./images/img2.jpg" alt="naruto" />
+            </div>
+            <div class="content">
+                <img onclick="openImg(this)" src="./images/img3.jpg" alt="naruto" />
+            </div>
+            <div class="content">
+                <img onclick="openImg(this)" src="./images/img4.jpg" alt="naruto" />
+            </div>
+            <div class="content">
+                <img onclick="openImg(this)" src="./images/img5.jpg" alt="naruto" />
+            </div>
+            <div class="content">
+                <img onclick="openImg(this)" src="./images/img6.jpg" alt="naruto" />
+            </div>
+            <div class="content">
+                <img onclick="openImg(this)" src="./images/img7.jpg" alt="naruto" />
+            </div>
+            <div class="fullImg"><button onclick="close()">X</button>
+              <img alt="" id="img-Box"/>
+            </div>
+        </div>
+    </main>
+    <script>
+      function openImg(thisproductSmallImg) {
+        var productFullImg = document.getElementById("img-Box");
+        productFullImg.src = productSmallImg.src;
+      }
+      function close(){
+        var productFullImg = document.getElementById("fullImg");
+        productFullImg.style.display = none
+      }
+    </script>
+  </body>
+</html>
