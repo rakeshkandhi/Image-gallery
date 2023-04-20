@@ -1,11 +1,12 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-  height: 100vh;
-  background-image: linear-gradient(rgb(53, 53, 53), grey);
+  background-image: linear-gradient(#322b2b, #999);
 }
+
 h1 {
   padding: 20px;
   color: #e6dcdc;
@@ -13,29 +14,43 @@ h1 {
   text-align: center;
   position: sticky;
 }
+
 .container {
-  margin: 20px 100px 10px 150px;
-  height: 50vh;
+  margin: 5%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
-  overflow: scroll;
-  border: 1px solid #a30f0f;
+  justify-content: center;
+  border: 1px solid #2c2929;
+  border-radius: 10px;
 }
-.content{
-    margin: 2px;
-    padding: 10px;
+
+.content {
+  margin: 2px;
+  padding: 10px;
+  height: 200px;
 }
-.content img {
-  height: 25vh;
-  cursor: pointer;
-}
-#fullImg{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display: flex;
+
+.fullImg {
+  width: 90vh;
+  display: none;
   justify-content: center;
   align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+button {
+  width: 30px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+#img-Box {
+  width: 60%;
 }

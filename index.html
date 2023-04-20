@@ -6,56 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Image Gallery</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
   <script>
-    function openImg(thisproductSmallImg) {
+    function openImg(imgsrc) {
       var imagepop = document.getElementById("img-Box");
-      imagepop.src = productSmallImg.src;
+      document.getElementById("imgSrc").style.display = "flex";
+      imagepop.src = imgsrc.src;
     }
-    function close() {
-      var imagepop = document.getElementById("fullImg");
-      imagepop.style.display = none;
+    function closeImg() {
+      document.getElementById("imgSrc").style.display = "none";
     }
   </script>
 
   <header>
-    <h1>Image Gallery</h1>
+    <h1>Naruto Image Gallery</h1>
   </header>
   <main>
-    <div class="container">
-      <div class="content">
-        <img onclick="openImg(this)" src="./images/img.jpg" alt="naruto" />
-      </div>
-      <div class="content">
-        <img onclick="openImg(this)" src="./images/img1.jpg" alt="naruto" />
-      </div>
-      <div class="content">
-        <img onclick="openImg(this)" src="./images/img2.jpg" alt="naruto" />
-      </div>
-      <div class="content">
-        <img onclick="openImg(this)" src="./images/img3.jpg" alt="naruto" />
-      </div>
-      <div class="content">
-        <img onclick="openImg(this)" src="./images/img4.jpg" alt="naruto" />
-      </div>
-      <div class="content">
-        <img onclick="openImg(this)" src="./images/img5.jpg" alt="naruto" />
-      </div>
-      <div class="content">
-        <img onclick="openImg(this)" src="./images/img6.jpg" alt="naruto" />
-      </div>
-      <div class="content">
-        <img onclick="openImg(this)" src="./images/img7.jpg" alt="naruto" />
-      </div>
-      <div class="fullImg"><button onclick="close()">X</button>
+    <section class="container">
+      <div class="fullImg" id="imgSrc">
+        <button onclick="closeImg()">X</button>
         <img alt="" id="img-Box" />
       </div>
-    </div>
+      <div class="content">
+        <img onclick="openImg(this)" src="https://wallpapercave.com/dwp1x/7JCiblL.jpg" alt="naruto" />
+      </div>
+      <div class="content">
+        <img onclick="openImg(this)" src="https://wallpapercave.com/dwp1x/KvKEr5q.jpg" alt="naruto" />
+      </div>
+      <div class="content">
+        <img onclick="openImg(this)" src="https://wallpapercave.com/dwp1x/7VoHDGH.jpg" alt="naruto" />
+      </div>
+      <div class="content">
+        <img onclick="openImg(this)" src="https://wallpapercave.com/dwp1x/DgIaxEG.jpg" alt="naruto" />
+      </div>
+      <div class="content">
+        <img onclick="openImg(this)" src="https://wallpapercave.com/dwp1x/4RYGqvD.jpg" alt="naruto" />
+      </div>
+      <div class="content">
+        <img onclick="openImg(this)" src="https://wallpapercave.com/dwp1x/GF8TwqI.jpg" alt="naruto" />
+      </div>
+      <div class="content">
+        <img onclick="openImg(this)" src="https://wallpapercave.com/dwp1x/EN16W8G.jpg" alt="naruto" />
+      </div>
+      <div class="content">
+        <img onclick="openImg(this)" src="https://wallpapercave.com/dwp1x/c2M4jDb.jpg" alt="naruto" />
+      </div>
+    </section>
   </main>
-
 </body>
 
 </html>
